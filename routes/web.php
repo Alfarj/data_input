@@ -1,5 +1,9 @@
 <?php
 
+//use App\Http\Controllers\AturController;
+
+use App\Http\Controllers\homecontroller;
+use app\Http\Controllers\aturcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,18 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/about', function () {
+Route::get('/aa', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/',[homecontroller::class, 'index']);
 
-Route::get('/input', function () {
-    return view('input');
-});
-
-Route::get('/daftar', function () {
-    return view('daftar');
-});
+Route::get('/input',[homecontroller::class, 'input']);
+Route::get('/daftar',[homecontroller::class, 'daftar']);

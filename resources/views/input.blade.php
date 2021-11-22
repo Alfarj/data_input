@@ -2,17 +2,22 @@
 
 @section('container')
 <h1>INPUT DATA</h1>
-<div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary mb-3">input</button>
+<form action="{{ url('input')}}" method="post">
+<div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">NAMA</span>
+  <input type="text" name="nama" class="form-control" placeholder="NAMA LENGKAP">
+</div>
+<div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">ALAMAT</span>
+  <input type="text" name="alamat" class="form-control" placeholder="ALAMAT LENGKAP">
+</div>
+<div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">JENIS KELAMIN</span>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>PILIH</option>
+    <option value="1">PRIA</option>
+    <option value="2">WANITA</option>
+  </select>
+</div>
+</form>
 @endsection

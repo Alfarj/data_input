@@ -11,17 +11,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <DIV class="container">
     <h1><a href="/">WELCOME</a></h1>
-<!-- As a link -->
+  </DIV>
 <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="input">INPUT DATA</a>
     </div>
   </nav>
-  
-  <!-- As a heading -->
   <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="daftar">DAFTAR DATA</a>
     </div>
   </nav>
